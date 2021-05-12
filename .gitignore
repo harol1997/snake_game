@@ -1,0 +1,6 @@
+myenv
+build
+.vscode
+__pycache__
+test.py
+main.spec
