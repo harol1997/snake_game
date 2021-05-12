@@ -1,6 +1,6 @@
 # SNAKE GAME
 
-    It's popular snake come, but this presentation is executing in terminal
+    It's popular snake game, but this presentation is executing in terminal
     this first version has been tried just in windows 10
 
 # PYTHON 3.8.7
