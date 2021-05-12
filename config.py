@@ -17,11 +17,11 @@ class Configure:  # configurator
             self.f.write_file(configure)
             
         if "MAX_SPEED" not in configure:
-            configure["MAX_SPEED"] = 0.5
+            configure["MAX_SPEED"] = 0.25
             self.f.write_file(configure)
 
         if "MIN_SPEED" not in configure:
-            configure["MIN_SPEED"] = 0.2
+            configure["MIN_SPEED"] = 0.08
             self.f.write_file(configure)
 
         if "SNAKE_LINE_START" not in configure:
@@ -38,6 +38,10 @@ class Configure:  # configurator
         
         if "SIZE" not in configure:
             configure["SIZE"] = 3
+            self.f.write_file(configure)
+
+        if "RATE" not in configure:
+            configure["RATE"] = 0.01
             self.f.write_file(configure)
         
         return configure

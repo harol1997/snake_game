@@ -56,7 +56,7 @@ class Game:
                 if self.snake.eat(self.food):  
                     score += 1
                     self.food = None
-                    self.snake.speed -= 0.005
+                    self.snake.speed -= config.configurations["RATE"]
                     control_generate_food = True
             #food
 

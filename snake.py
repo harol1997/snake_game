@@ -15,9 +15,9 @@ class  Snake:
             size (int, optional): [snake length]. Defaults to 3.
         """
         self.__body = [Position(line_start, column_start+i) for i in range(size)]
-        self.__speed = min_speed
+        self.__speed = max_speed
         self.__direction = direction
-        self.__MAX_SPEED = max_speed  # it works with sleep in main.py
+        self.__MIN_SPEED = min_speed  # it works with sleep in main.py
 
     @property
     def speed(self):
@@ -35,7 +35,7 @@ class  Snake:
         Args:
             new_speed (int): [new snake speed]
         """
-        self.__speed = new_speed if new_speed < self.__MAX_SPEED else self.__speed
+        self.__speed = self.__MIN_SPEED if new_speed < self.__MIN_SPEED else new_speed
 
     @classmethod
     def show_body(cls, snake):
