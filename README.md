@@ -15,6 +15,6 @@
 
 # Configure
 
-# You can change some configurations in configure.json (this file will be generate after execute game.)
+    You can change some configurations in configure.json (this file will be generate after execute game.)
 
-# Also, there's an executable if you only want to play snake game
+Also, there's an executable if you only want to play snake game
