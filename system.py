@@ -3,6 +3,7 @@ from player import Player
 from game import Game
 from instructions import instructions
 from config import config
+from art import tprint
 
 class System:
 
@@ -11,7 +12,7 @@ class System:
         
     def run(self):
         while True:
-            print(f"Welcome To Snake Game........\n".title())
+            tprint("Snake Game........\n")
             print("1. Play")
             print("2. Instructions")
             print("3. Scores")
